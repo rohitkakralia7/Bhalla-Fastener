@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhalla fastner and Manufacturing Company</title>
+    <link rel="stylesheet" href="bunnyComp.css">
+    <script src="https://kit.fontawesome.com/5ce4287101.js" crossorigin="anonymous"></script>
+</head>
+<body onload="myFunction()">
+    <div id="loading">
+        
+    </div>
+    <nav class="tabs">
+        <a href="index.html"><img class="logo" src="photos/companylogo5.png" alt="logo"></a>
+        
+         <ul id="sidemenu" style="margin-right: 0px;">
+            
+             <li class="div-link" ><a href="#header">Home</a></li>
+             
+             <li class="div-link"><a href="#about">About</a></li>
+             <li class="div-links"><a href="#services"> Our products</a></li>
+             
+             <li  class="div-link" style="margin-right: 50px;"><a href="#contact">Contact</a></li>
+             
+             <i class="fa-solid fa-xmark" onclick="closemenu()" style="color: #fff;"></i>
+         </ul>
+         <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+     </nav>
+
+    <div id="header">
+        <div class="container">
+           
+            <div class="header-text">
+                <p class="fastner" data-value="4">Bhalla fasteners</p>
+                <h1 class="parall" data-value="3"><span>Nut and Bolts </span>Manufacturing <br>Company from Punjab</h1>
+                
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.addEventListener("mousemove", parallax);
+        function parallax(e){
+            document.querySelectorAll(".parall").forEach(function(move){
+            var moving_value = move.getAttribute("data-value");
+            var x = (e.clientX * moving_value) /250;
+            var y = (e.clientY * moving_value) /250;
+   
+            move.style.transform = "translate(" + x + "px) translateY("+ y + "px)";
+            });
+        }
+    </script>
+    <script type="text/javascript">
+        document.addEventListener("mousemove", parallex);
+        function parallex(e){
+            document.querySelectorAll(".fastner").forEach(function(move){
+            var moving_value = move.getAttribute("data-value");
+            var x = (e.clientX * moving_value) /250;
+            var y = (e.clientY * moving_value) /250;
+   
+            move.style.transform = "translate(" + x + "px) translateY("+ y + "px)";
+            });
+        }
+    </script>
+<!-- --------------------------about------------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+            <div class="about-col-1">
+                
+                <!--<div class="images">
+                    <input type="radio" name="slide" id="img1">
+                    <input type="radio" name="slide" id="img2">
+                    <input type="radio" name="slide" id="img3">-->
+                     <img src="photos/poster2.png" class="sliding" alt="img1">
+                    <!-- <img src="photos/slideshow.jpg" class="sliding" alt="img2">
+                     <img src="photos/slideshow2.jpg" class="sliding" alt="img3">
+                     <div class="dots">
+                        <label for="img1"></label>
+                        <label for="img2"></label>
+                        <label for="img3"></label>
+                     </div>
+                </div> -->
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Company</h1>
+                <p>The comapny since 1993. The quality of our products are best and rates are lower
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('GSTIN')">GSTIN</p>
+                    <p class="tab-links"  onclick="opentab('Deal In Highttensile')">Deal In Highttensile</p>
+                    <p class="tab-links"  onclick="opentab('Deal In MS')">Deal In MS</p>
+                </div>
+                <div class="tab-contents active-tab" id="GSTIN">
+                    <ul>
+                        <li>03FXSPB9395F1Z0</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Deal In Highttensile">
+                    <ul>
+                       <nav style="margin-top: -10px;"> <li>8.8 and 10.9 bolts <br> 6mm to 33mm <br> available in all size
+                               <br> <div style="margin-top: 50px;">8.8 and 10.9 nuts<br> 6mm to 33mm </div></li>
+                        <li><img src="photos/Dealin.jpg" alt="nuts" class="dealin"></li></nav>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Deal In MS">
+                    <ul>
+                        <li>Mild Steel(MS) Bolt 1/4 to 3/4 inches. All size available <br>
+                                <ul class="nuts-cont"><li>Nuts - Cold forge nut 1/4 to 3/4 <br></li>
+                               <div class="nuts2"><li >Nylock nuts 982 and 985 din 6mm to 48mm, 1/4 to 5/8.</li>
+                                       <li>Double face, Weld nuts, Flenge nuts, domb nut, Tee nuts</li></div> 
+                                    </ul>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+    </div>
+
+<!-- ------------------------------services--------------------------------- -->
+
+     <div id="services">
+        <div class="container">
+            <h1 class="sub-title" style="color: #fff;">Our products</h1>
+            <div class="images">
+             <p><img src="photos/product1.jpg" alt="prod" >CSK Available(Gold and Silver Polish) <br> <span style="font-weight: 800;">₹4050-4200</span></p>
+             <p><img src="photos/product2.jpg" alt="prod" >MS-Bolt 1/4 to 5/8 and 6mm to 33mm <br><span style="font-weight: 800;">Price vary size by size(₹3250-3600)</span></p>
+             <p><img src="photos/product7.jpg" alt="prod" >Coldforg Nuts 1/4 to 5/8<br><span style="font-weight: 800;">₹3550</span></p>
+            </div>
+            <div class="more_prod" style="margin-top: 40px;font-size: 69px;"><p class="more_prod_text" style="color: #ff004f;"><a href="our_product.html">More products</a></p></div>
+        </div>
+        
+    </div> 
+
+    <!-- ------------------------------------contact------------------------------------>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope-circle-check fa-beat"></i>infobhallafasteners@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone fa-beat"></i><span>6280446075</span>, 9501744890</p>
+                    <div class="social-icon">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <input type="text" name="Phone_No." placeholder="Phone No." required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div></div>
+    </div>
+
+
+    <div class="address" style="color: black; border-top: solid #ff004f;">
+        <div class="address_img"  style="height: 336px;">
+           
+            <i class="fa-solid fa-location-dot fa-bounce fa-2xl" style="margin-top: 50px; margin-bottom: 20px;"></i>
+           <div style="border-right: solid #000; border-left: solid #000; " class="box" > 
+            <p ><span style="font-weight: 900; margin-bottom: 20px;">Bhalla fasteners Nuts & Bolts </span></p><br style="margin-top: -6px;"> <p style="margin-bottom: -6px;">No. B16-843/1383, St.No. 2, </p><br><p style="margin-bottom: -6px;">Murad Pura, Miller Ganj, Cycle Market, </p><br><p>Gill Road, Ludhiana(141003)</p>
+            
+           </div>
+           <div class="copy_right">
+             <p style="text-align: center;margin-top: 53px;">© 2023 Bhalla fasteners Nuts & Bolts BF. All rights reserved.</p>
+           </div>
+        </div>
+    </div>
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+        
+     </script>
+      <script>
+       var sidemeu = document.getElementById("sidemenu");
+
+         function openmenu(){
+             sidemeu.style.right = "0";
+         }
+         function closemenu(){
+             sidemeu.style.right = "-200px";
+         }
+     </script>
+
+<script>
+   var loader = document.getElementById('loading');
+//    window.addEventListener("load", function(){
+//     loader.style.display = "none";
+//    })
+   function myFunction(){
+    loader.style.display = 'none';
+   }
+     
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz5mJn2rMoErEDJjeWDvl2g5vovJeWMSEy8PNH5dyY0b3GZ7VM4DqIku2a5RRhddBICSA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>

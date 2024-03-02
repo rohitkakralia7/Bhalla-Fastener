@@ -1,0 +1,43 @@
+.tabs{
+    box-shadow: 0 0 4px #fff;
+    border-bottom: solid #ababab 3px;
+    background-color: #fff;
+    padding: 0px 0px;
+}
+.logo{
+    text-align: center;
+    color: #ababab;
+}
+#about{
+    padding: 80px 0;
+    
+}
+.row{
+    display: flex;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+}
+.col_1{
+    flex-basis: 50%;/*width of col*/
+    padding-top: 0%;
+    
+    position: relative;
+    overflow: hidden;
+}
+.col_1{
+    display: flex;
+    width: 100%;
+}
+.col_1 img{
+    height: 460px;
+    width: 470px;
+    width: 100;
+    border-radius: 5px;
+    margin: 10% 10%; 
+}
+.col_2{
+    margin-top: 3% ;
+}
+.col_2 h1{
+    font-size: 50px;
+}
